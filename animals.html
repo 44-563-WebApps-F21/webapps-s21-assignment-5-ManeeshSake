@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <title>Creative thinking</title>
-  <h1>Animals by Maneesh sake</h1>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -15,6 +14,29 @@
 
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Interesting Animals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plane.html">Plane</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="train.html">Train</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Animals by Maneesh sake</h1>
 <div class="container">
     <div class="row">
         <div class="col-sm-2">M
@@ -32,7 +54,7 @@
     </div>
     <div class="row">
         <div class="col-md">Magpie</div>
-        <div class="col-md">Aprilla</div>
+        <div class="col-md">Aardvark</div>
         <div class="col-md">Narwhal</div>
         <div class="col-md">Elephant</div>
         <div class="col-md">Squirrel</div>
@@ -43,5 +65,149 @@
     Letters are breaking above but words are not breaking because of col-md (upto medium screen).
 </p>
 
+<div class="container">
+  <img src="Magpie.jpg" class="img-fluid" alt="Magpie" width="400" height="500">
+  <img src="Aardvark.jpg" class="img-fluid" alt="Aardvark" width="400" height="500">
+  <img src="Narwhal.jpg" class="img-fluid" alt="Narwhal" width="400" height="500">
+</div>
+
+<div class="container">
+  <img src="Magpie.jpg" class="img-thumbnail" alt="Magpie" width="400" height="500">
+  <img src="Aardvark.jpg" class="img-thumbnail" alt="Aardvark" width="400" height="500">
+  <img src="Narwhal.jpg" class="img-thumbnail" alt="Narwhal" width="400" height="500">
+</div><br>
+
+<div class="container">
+  <table class="table table-borderless table-striped table-hover caption-top">
+    <caption>Table Styling</caption>
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Letter</th>
+        <th scope="col">Animal</th>
+        <th scope="col">City</th>
+        <th scope="col">Car</th>
+      </tr>
+    </thead>
+    <tbody style="background: paleturquoise;">
+      <tr>
+        <th scope="row">1</th>
+        <td>M</td>
+        <td>Magpie</td>
+        <td>Miami</td>
+        <td>Mercedes-Benz</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>A</td>
+        <td>Aardvark</td>
+        <td>Atlanta</td>
+        <td>Audi</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>N</td>
+        <td>Narwhal</td>
+        <td>Newark</td>
+        <td>Nissan</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>E</td>
+        <td>Elephant</td>
+        <td>Eugene</td>
+        <td>E-Niro</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>S</td>
+        <td>Squirrel</td>
+        <td>San Francisco</td>
+        <td>Specter</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>H</td>
+        <td>Horse</td>
+        <td>Honolulu</td>
+        <td>Hyundai</td>
+      </tr>
+    </tbody>
+  </table>
+</div><br>
+
+<div class="container">
+  <label>Buttons and Button Groups</label>
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-success">M</button>
+      <button type="button" class="btn btn-success">A</button>
+      <button type="button" class="btn btn-success">N</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Second group">
+      <button type="button" class="btn btn-warning">E</button>
+      <button type="button" class="btn btn-warning">S</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group">
+      <button type="button" class="btn btn-danger">H</button>
+    </div>
+  </div><br>
+
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <li><a class="dropdown-item" href="plane.html">Link to Plane page</a></li>
+        <li><a class="dropdown-item" href="train.html">Link to Train page</a></li>
+      </ul>
+    </div>
+  </div><br><br>
+
+  <form>
+    <div class="mb-3">
+      <label for="inputEmail" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="inputAnimal" class="form-label">Animal</label>
+      <input type="text" class="form-control" id="inputAnimal" placeholder="Enter your animal" required>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="newsletterCheck">
+      <label class="form-check-label" for="newsletterCheck">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form><br>
+
+  <div class="row">
+    <div class="card" style="width: 18rem;">
+      <img src="Magpie.jpg" class="card-img-top" alt="Magpie">
+      <div class="card-body">
+        <h5 class="card-title">Magpie</h5>
+        <p class="card-text">Magpies are birds of the Corvidae family. Like other members of their family, they are widely considered to be intelligent creatures. The Eurasian magpie, for instance, is thought to rank among the world's smartest creatures, and is one of the few non-mammal species able to recognize itself in a mirror test.</p>
+        <a href="https://en.wikipedia.org/wiki/Magpie" class="btn btn-primary">Click Here for more Info</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="Aardvark.jpg" class="card-img-top" alt="Aardvark">
+      <div class="card-body">
+        <h5 class="card-title">Aardvark</h5>
+        <p class="card-text">The aardvark is a medium-sized, burrowing, nocturnal mammal native to Africa. It is the only living species of the order Tubulidentata,although other prehistoric species and genera of Tubulidentata are known. Unlike most other insectivores, it has a long pig-like snout, which is used to sniff out food.</p>
+        <a href="https://en.wikipedia.org/wiki/Aardvark" class="btn btn-primary">Click Here for more Info</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="Narwhal.jpg" class="card-img-top" alt="Narwhal">
+      <div class="card-body">
+        <h5 class="card-title">Narwhal</h5>
+        <p class="card-text">The narwhal or narwhale (Monodon monoceros) is a medium-sized toothed whale that possesses a large "tusk" from a protruding canine tooth. It lives year-round in the Arctic waters around Greenland, Canada, and Russia.It is one of two living species of whale in the family Monodontidae, along with the beluga whale.</p>
+        <a href="https://en.wikipedia.org/wiki/Narwhal" class="btn btn-primary">Click Here for more Info</a>
+      </div>
+    </div>
+  </div>
+</div><br>
 </body>
 </html>
